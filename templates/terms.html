@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Terms and Conditions - Spendly{% endblock %}
+
+{% block content %}
+<div class="terms-section" style="max-width: 800px; margin: 4rem auto; padding: 0 2rem; color: var(--ink);">
+    <h1 class="hero-title" style="font-size: 2.5rem; margin-bottom: 2rem; text-align: center;">Terms and Conditions</h1>
+
+    <div class="terms-card" style="background: var(--paper-card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 2.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+
+        <section style="margin-bottom: 2rem;">
+            <h2 style="font-family: var(--font-display); color: var(--ink); margin-bottom: 1rem; font-size: 1.4rem;">1. Acceptance of Terms</h2>
+            <p style="color: var(--ink-muted); font-size: 0.95rem;">By accessing or using Spendly, you agree to be bound by these Terms and Conditions and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site.</p>
+        </section>
+
+        <section style="margin-bottom: 2rem;">
+            <h2 style="font-family: var(--font-display); color: var(--ink); margin-bottom: 1rem; font-size: 1.4rem;">2. Use of Service</h2>
+            <p style="color: var(--ink-muted); font-size: 0.95rem;">Spendly is provided as a personal expense tracking tool. You agree to use the service only for lawful purposes and in a way that does not infringe the rights of others or restrict their use of the service.</p>
+        </section>
+
+        <section style="margin-bottom: 2rem;">
+            <h2 style="font-family: var(--font-display); color: var(--ink); margin-bottom: 1rem; font-size: 1.4rem;">3. User Data</h2>
+            <p style="color: var(--ink-muted); font-size: 0.95rem;">You are responsible for the accuracy of the data you enter into the application. Spendly does not guarantee the absolute security of user data, although we implement standard industry practices to protect your information.</p>
+        </section>
+
+        <section style="margin-bottom: 2rem;">
+            <h2 style="font-family: var(--font-display); color: var(--ink); margin-bottom: 1rem; font-size: 1.4rem;">4. Limitations of Liability</h2>
+            <p style="color: var(--ink-muted); font-size: 0.95rem;">Spendly is provided "as is" without any warranties. In no event shall Spendly or its creators be liable for any damages (including, without limitation, damages for loss of data or profit) arising out of the use or inability to use the materials on the website.</p>
+        </section>
+
+        <section style="margin-bottom: 0;">
+            <h2 style="font-family: var(--font-display); color: var(--ink); margin-bottom: 1rem; font-size: 1.4rem;">5. Changes to Terms</h2>
+            <p style="color: var(--ink-muted); font-size: 0.95rem;">We reserve the right to revise these terms of service for our application at any time. By using this website you are agreeing to be bound by the then current version of these Terms and Conditions.</p>
+        </section>
+    </div>
+
+    <div style="margin-top: 2rem; text-align: center;">
+        <a href="{{ url_for('landing') }}" class="btn-ghost" style="font-size: 0.9rem;">&larr; Back to Home</a>
+    </div>
+</div>
+{% endblock %}
